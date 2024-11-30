@@ -238,6 +238,7 @@ C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
 C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
 C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
 C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=Yes
 
 [Package|Packager|Configure Registry Files]
 Applicable=No
@@ -273,6 +274,7 @@ C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPa
 C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
 C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
 C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=$(WinSysPath)
 
 [Package|Packager|Configure Shared Files]
 Applicable=Yes
@@ -284,6 +286,16 @@ Type=single
 Size=
 Title=SimpleWrite
 
+[Package|Packager|Package]
+PackageFolder=C:\My Documents\Projects\SimpleWrite\Build
+ProjectFolder=C:\My Documents\Projects\SimpleWrite\Source
+ServerSideCab=
+File1=C:\My Documents\Projects\SimpleWrite\Build\setup.exe
+File2=C:\My Documents\Projects\SimpleWrite\Build\Setup.Lst
+File3=C:\My Documents\Projects\SimpleWrite\Build\Project1.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
 [Package|Packager|IconGroups]
 Group0=SimpleWrite
 PrivateGroup0=True
@@ -294,13 +306,3 @@ Icon1=Project1.exe
 Title1=SimpleWrite
 StartIn1=$(AppPath)
 Key1=Icon1
-
-[Package|Packager|Package]
-PackageFolder=C:\My Documents\Projects\SimpleWrite\Build
-ProjectFolder=C:\My Documents\Projects\SimpleWrite\Source
-ServerSideCab=
-File1=C:\My Documents\Projects\SimpleWrite\Build\setup.exe
-File2=C:\My Documents\Projects\SimpleWrite\Build\Setup.Lst
-File3=C:\My Documents\Projects\SimpleWrite\Build\Project1.CAB
-Handler1=PDWizard.FolderDplySubWiz
-Handler2=PDWizard.WebPostDplySubWiz
